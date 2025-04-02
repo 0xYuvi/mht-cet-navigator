@@ -7,6 +7,7 @@ import CollegeInsightsSection from '@/components/CollegeInsightsSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Search, GraduationCap, BookOpen, BarChart, MessageSquare } from 'lucide-react';
 
@@ -31,53 +32,61 @@ const Index = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <Button 
-                onClick={() => navigate('/predictor')}
+                asChild
                 variant="outline" 
                 className="h-auto p-6 flex flex-col items-center gap-4 card-hover"
               >
-                <Search className="h-10 w-10 text-primary" />
-                <div>
-                  <h3 className="text-xl font-bold mb-2">College Predictor</h3>
-                  <p className="text-sm opacity-70">Get personalized college recommendations based on your scores and preferences</p>
-                </div>
+                <Link to="/predictor">
+                  <Search className="h-10 w-10 text-primary" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">College Predictor</h3>
+                    <p className="text-sm opacity-70">Get personalized college recommendations based on your scores and preferences</p>
+                  </div>
+                </Link>
               </Button>
               
               <Button 
-                onClick={() => navigate('/colleges')}
+                asChild
                 variant="outline" 
                 className="h-auto p-6 flex flex-col items-center gap-4 card-hover"
               >
-                <GraduationCap className="h-10 w-10 text-primary" />
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Top Colleges</h3>
-                  <p className="text-sm opacity-70">Explore top engineering colleges in Pune, Mumbai and across Maharashtra</p>
-                </div>
+                <Link to="/colleges">
+                  <GraduationCap className="h-10 w-10 text-primary" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Top Colleges</h3>
+                    <p className="text-sm opacity-70">Explore top engineering colleges in Pune, Mumbai and across Maharashtra</p>
+                  </div>
+                </Link>
               </Button>
               
               <Button 
-                onClick={() => navigate('/resources')}
+                asChild
                 variant="outline" 
                 className="h-auto p-6 flex flex-col items-center gap-4 card-hover"
               >
-                <BookOpen className="h-10 w-10 text-primary" />
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Resources</h3>
-                  <p className="text-sm opacity-70">Access MHT-CET study materials, past papers, and admission guidance</p>
-                </div>
+                <Link to="/resources">
+                  <BookOpen className="h-10 w-10 text-primary" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Resources</h3>
+                    <p className="text-sm opacity-70">Access MHT-CET study materials, past papers, and admission guidance</p>
+                  </div>
+                </Link>
               </Button>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
               <Button 
-                onClick={() => navigate('/insights')}
+                asChild
                 variant="outline" 
                 className="h-auto p-6 flex flex-col items-center gap-4 card-hover"
               >
-                <BarChart className="h-10 w-10 text-primary" />
-                <div>
-                  <h3 className="text-xl font-bold mb-2">College Insights</h3>
-                  <p className="text-sm opacity-70">Get insider knowledge about college culture, faculty, and facilities</p>
-                </div>
+                <Link to="/insights">
+                  <BarChart className="h-10 w-10 text-primary" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">College Insights</h3>
+                    <p className="text-sm opacity-70">Get insider knowledge about college culture, faculty, and facilities</p>
+                  </div>
+                </Link>
               </Button>
               
               <Button 
@@ -90,7 +99,7 @@ const Index = () => {
                 <MessageSquare className="h-10 w-10 text-primary" />
                 <div>
                   <h3 className="text-xl font-bold mb-2">Chat with Seniors</h3>
-                  <p className="text-sm opacity-70">Connect with current students and alumni from your target colleges</p>
+                  <p className="text-sm opacity-70 text-black">Connect with current students and alumni from your target colleges</p>
                 </div>
               </Button>
             </div>

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import FloatingObjects from './FloatingObjects';
 
 const HeroSection = () => {
@@ -19,11 +20,11 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
-            <Button className="bg-gradient-to-r from-primary to-secondary text-neutral hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-              Try College Predictor
+            <Button asChild className="bg-gradient-to-r from-primary to-secondary text-neutral hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+              <Link to="/predictor">Try College Predictor</Link>
             </Button>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-6 text-lg">
-              Explore Resources
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-6 text-lg">
+              <Link to="/resources">Explore Resources</Link>
             </Button>
           </div>
           
@@ -75,8 +76,8 @@ const HeroSection = () => {
               </div>
             </div>
             
-            <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity">
-              Get Full Prediction
+            <Button asChild className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity">
+              <Link to="/predictor">Get Full Prediction</Link>
             </Button>
           </div>
         </div>

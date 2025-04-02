@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const CtaSection = () => {
   return (
@@ -21,14 +22,14 @@ const CtaSection = () => {
             Don't leave your engineering future to chance. Use our AI-powered predictor to find the perfect college that matches your scores and preferences.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-              Try College Predictor Now
+            <Button asChild className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+              <Link to="/predictor">Try College Predictor Now</Link>
             </Button>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-6 text-lg">
-              Explore Resources
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-6 text-lg">
+              <Link to="/resources">Explore Resources</Link>
             </Button>
           </div>
-          <p className="text-sm mt-6 text-gray-500">
+          <p className="text-sm mt-6 text-black font-medium">
             Join thousands of students who made informed decisions about their engineering careers with MHT-CET Navigator.
           </p>
         </div>
