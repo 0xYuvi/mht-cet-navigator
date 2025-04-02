@@ -1,14 +1,23 @@
-# MHT CET Navigator Backend
+# MHT CET Navigator
 
-This is the backend server for the MHT CET Navigator application, built with Node.js, Express, and TypeScript.
+A comprehensive application to help students navigate through MHT CET admissions process.
 
 ## Features
 
-- User authentication (register, login)
-- JWT-based authentication
+### Frontend
+- Modern React/TypeScript application
+- Beautiful UI with shadcn/ui components
+- Responsive design
+- College predictor form
+- Resources section
+- Top colleges listing
+
+### Backend
+- Node.js/Express with TypeScript
 - MongoDB database integration
+- JWT-based authentication
 - RESTful API endpoints
-- TypeScript support
+- User management
 
 ## Prerequisites
 
@@ -18,10 +27,10 @@ This is the backend server for the MHT CET Navigator application, built with Nod
 
 ## Setup
 
-1. Clone the repository:
+### Backend
+1. Navigate to the backend directory:
 ```bash
-git clone <your-repository-url>
-cd mht-cet-navigator-backend
+cd back end
 ```
 
 2. Install dependencies:
@@ -29,7 +38,7 @@ cd mht-cet-navigator-backend
 npm install
 ```
 
-3. Create a `.env` file in the root directory with the following variables:
+3. Create a `.env` file with the following variables:
 ```env
 PORT=5001
 MONGODB_URI=mongodb://localhost:27017/mht-cet-navigator
@@ -42,6 +51,22 @@ NODE_ENV=development
 npm run dev
 ```
 
+### Frontend
+1. Navigate to the frontend directory:
+```bash
+cd front end/mht-cet-navigator-main 2
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
 ## API Endpoints
 
 ### Authentication
@@ -49,14 +74,9 @@ npm run dev
 - `POST /api/users/login` - Login user
 - `GET /api/users/profile` - Get user profile (protected route)
 
-## Development
-
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build the project
-- `npm start` - Start production server
-
 ## Project Structure
 
+### Backend
 ```
 src/
 ├── controllers/    # Route controllers
@@ -64,6 +84,15 @@ src/
 ├── middleware/     # Custom middleware
 ├── routes/         # API routes
 └── index.ts        # Application entry point
+```
+
+### Frontend
+```
+src/
+├── components/     # React components
+├── lib/           # Utility functions
+├── styles/        # CSS styles
+└── App.tsx        # Main application component
 ```
 
 ## Contributing
@@ -76,4 +105,4 @@ src/
 
 ## License
 
-This project is licensed under the MIT License. 
+This project is licensed under the MIT License.

@@ -25,4 +25,20 @@ logs/
 *.log
 
 # TypeScript
-*.tsbuildinfo 
+*.tsbuildinfo
+
+# Frontend specific
+public/
+*.css.map
+*.js.map
+*.html
+*.ico
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.woff
+*.woff2
+*.ttf
+*.eot
