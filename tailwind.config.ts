@@ -39,6 +39,8 @@ export default {
 				},
 				tertiary: '#EFB11D',
 				neutral: '#EBE9E1',
+				neutral800: '#1A1A1A', // Adding neutral-800 equivalent
+				neutral700: '#333333', // Adding neutral-700 equivalent
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'

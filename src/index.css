@@ -85,13 +85,14 @@
   }
 
   .glass-card {
-    @apply backdrop-blur-sm bg-white/80 border border-white/20 shadow-md dark:bg-neutral-800/80 dark:border-neutral-700/20;
+    @apply backdrop-blur-sm bg-white/80 border border-white/20 shadow-md;
   }
 }
 
-/* Dark mode support for glass card */
-.dark .glass-card {
-  @apply bg-neutral-800/80 border-neutral-700/20;
+@layer components {
+  .dark .glass-card {
+    @apply bg-neutral800/80 border-neutral700/20;
+  }
 }
 
 /* Custom scrollbar */
