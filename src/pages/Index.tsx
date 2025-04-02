@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import PredictorForm from '@/components/PredictorForm';
-import TestimonialsSection from '@/components/TestimonialsSection';
+import CollegeInsightsSection from '@/components/CollegeInsightsSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
 
@@ -16,7 +16,7 @@ const Index = () => {
         <HeroSection />
         <FeaturesSection />
         <PredictorForm />
-        <TestimonialsSection />
+        <CollegeInsightsSection />
         <CtaSection />
       </main>
       <Footer />

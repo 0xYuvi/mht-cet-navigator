@@ -85,8 +85,13 @@
   }
 
   .glass-card {
-    @apply backdrop-blur-sm bg-white/80 border border-white/20 shadow-md;
+    @apply backdrop-blur-sm bg-white/80 border border-white/20 shadow-md dark:bg-neutral-800/80 dark:border-neutral-700/20;
   }
+}
+
+/* Dark mode support for glass card */
+.dark .glass-card {
+  @apply bg-neutral-800/80 border-neutral-700/20;
 }
 
 /* Custom scrollbar */
@@ -96,6 +101,10 @@
 
 ::-webkit-scrollbar-track {
   background: #EBE9E1;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #333;
 }
 
 ::-webkit-scrollbar-thumb {
